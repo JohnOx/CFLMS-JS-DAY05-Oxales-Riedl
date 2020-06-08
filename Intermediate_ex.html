@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Exercise</title>
+</head>
+
+
+<body>
+
+    
+
+    <script type = "text/javascript" src="data.json"></script>
+    <script>
+
+     var my_employees = JSON.parse(employees);
+     console.log(my_employees);
+
+    
+        var i = 0
+        document.writeln("<table border='2'><tr>");
+        for (i = 0; i < my_employees.length; i++) {
+            document.writeln("<td>");
+            document.writeln("<table border='1' width=100 >");
+            document.writeln("<tr><td><b>Name</b></td><td width=50>" + my_employees[i].firstName + "</td></tr>");
+            document.writeln("<tr><td><b>Region</b></td><td width=50>" + my_employees[i].region + "</td></tr>");
+            document.writeln("</table>");
+            document.writeln("</td>");
+        }
+
+        
+        document.writeln("</tr></table>");
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+<!--
+"UniqueID": "1A",
+                                "FirstName": "John",
+                                "LastName": "Oxales",
+                                "EmailAddress":"john@john.de",
+                                "JobTitle":"Developer",
+                                "Salary":10000
+                            }, {
+                                "UniqueID": "2A",
+                                "FirstName": "Ervin",
+                                "LastName": "King",
+                                "EmailAddress":"ervin@king.de",
+                                "JobTitle":"Grafiker",
+                                "Salary":20500
+                            },  {
+                                "UniqueID": "3A",
+                                "FirstName": "Susi",
+                                "LastName": "Queen",
+                                "EmailAddress":"susi@queen.de",
+                                "JobTitle":"Sportlerin",
+                                "Salary":4000
+                            },  {
+                                "UniqueID": "4A",
+                                "FirstName": "Tina",
+                                "LastName": "Huber",
+                                "EmailAddress":"tina@huber.de",
+                                "JobTitle":"Lawyer",
+                                "Salary":9000
+                            },  {
+                                "UniqueID": "5A",
+                                "FirstName": "Robert",
+                                "LastName": "Mustermann",
+                                "EmailAddress":"robert@mustermann.de",
+                                "JobTitle":"Designer",
+                                "Salary":200000
+                            }]
+                        }-->
+                            
