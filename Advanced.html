@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="bookData.json"></script>
+
+    <script>
+        var boox = JSON.parse(books);
+        console.log(boox);
+        for (i = 0; i < boox.length; i++) {
+            document.writeln("<ul>");
+            document.writeln ("<li>title: " + boox[i].title + "</li>");
+            document.writeln ("<p>author: " + boox[i].author + "</p>");
+            document.writeln ("<p>read: " + boox[i].read + "</p>"); 
+            if (boox[i].read == true){
+            document.write("<p style= 'background-color:yellow;'>");
+        }
+            document.writeln ("<img src= " + boox[i].cover +  ">");
+            document.writeln ("</ul>");
+            
+    }
+    </script>
+    
+</body>
+</html>
+
